@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+    <!--Import Google Icon Font-->
+    <!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!--Import materialize.css-->
+    <!-- <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script> -->
+    <script>window.jQuery = window.$ = require('jquery');</script>
+    <script src="bower_components/hammerjs/hammer.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css" media="screen,projection"/>
 
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+<body ng-app="app">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper blue darken-1">
+                <!-- <a href="#!" class="brand-logo">Logo</a> -->
+                <ul class="right">
+                    <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+                    <li ui-sref-active="active"><a ui-sref="settings">Settings</a></li>
+                    <!-- <li ui-sref-active="active"><a ui-sref="">JavaScript</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div ui-view></div>
+
+
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+    <script>
+        // You can also require other files to run in this process
+        require('./renderer.js')
+    </script>
+
+</body>
+
+
 </html>

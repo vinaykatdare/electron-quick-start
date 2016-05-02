@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "bower": "^1.7.9",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "jquery": "^2.2.3"
   }
 }

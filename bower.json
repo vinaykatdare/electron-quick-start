@@ -24,6 +24,9 @@
   "dependencies": {
     "jquery": "^2.2.3",
     "Materialize": "materialize#^0.97.6",
-    "Ionicons": "ionicons#^2.0.1"
+    "Ionicons": "ionicons#^2.0.1",
+    "hammerjs": "~2.0.8",
+    "angular": "~1.5.5",
+    "angular-ui-router": "~0.2.18"
   }
 }
